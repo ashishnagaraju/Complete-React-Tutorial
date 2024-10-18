@@ -1,0 +1,8 @@
+const [name, setName] = useState('na');
+
+
+useEffect(()=>{
+console.log();
+}); -----> runs every time page is rendered
+}, []);  -----> runs only after first render (dependancy array empty)
+}, [name]); ----> runs in the beginning and if 'name' state changes
